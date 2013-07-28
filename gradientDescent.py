@@ -11,7 +11,7 @@ def gradientDescent(initTheta, X, y, maxIter, alpha):
 		costRecord.append(curCost)
 		grad = costGradient(theta, X, y)
 		theta = theta - (alpha * grad)
-		#print theta
+		print grad
 		#raw_input("Press Enter to continue...")
 	
 	result = Tuple(theta, costRecord)
